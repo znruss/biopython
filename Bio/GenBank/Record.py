@@ -460,7 +460,7 @@ class Record:
                     start_pos = cur_seq_pos + section * 10
                     end_pos = start_pos + 10
                     seq_section = self.sequence[start_pos:end_pos]
-                    output += f" {seq_section.lower()}"
+                    output += f" {seq_section}"
 
                     # stop looping if we are out of sequence
                     if end_pos > len(self.sequence):
